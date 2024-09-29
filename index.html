@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomasz Karolczyk HomeWork Module2 / Sprint1 / Task2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="filter-container">
+        <form id="select-status">
+          Filtry:
+          <input
+            id="filter-by-name-input"
+            type="text"
+            placeholder="Wyszukaj po nazwie"
+          />
+          <input type="radio" id="alive" name="select" value="alive" />
+          <label for="alive">Zywy</label>
+          <input type="radio" id="dead" name="select" value="dead" />
+          <label for="dead">Martwy</label>
+          <input type="radio" id="unknown" name="select" value="unknown" />
+          <label for="unknown">Nieznany</label>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div id="main-wrapper"></div>
+      <div id="pagin">
+        <button onclick="prevPage()" id="leftArr">Poprzednia strona</button>
+        <button onclick="nextPage()" id="rightArr">Następna strona</button>
+      </div>
+      <div id="form-container">
+        <span>Stwórz Postać:</span>
+        <form id="create-item-form">
+          <input
+            id="input-name"
+            class="inputs"
+            type="text"
+            placeholder="Nazwa Postaci"
+          />
+          <select class="inputs" id="dead-or-alive">
+            <option value="alive">Zywy</option>
+            <option value="dead">Martwy</option>
+            <option value="unknown">Nieznany</option>
+          </select>
+          <input
+            id="input-race"
+            class="inputs"
+            type="text"
+            placeholder="Gatunek"
+          />
+          <button class="inputs" id="create" onclick="addItem()">Stwórz</button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

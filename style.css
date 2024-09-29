@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --default-card-color: rgb(255, 255, 255);
+  --default-bg-color: rgb(199, 199, 199);
+}
+body {
+  max-width: 1920px;
+  min-width: 400px;
+  margin: 0 auto;
+  background-color: var(--default-bg-color);
+}
+header {
+  padding-top: 0.5rem;
+  width: 1920px;
+}
+#filter-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#filter-by-name-input {
+  height: 30px;
+}
+#main-wrapper {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 340px;
+  width: 220px;
+  border: none;
+  margin: 10px;
+  background-color: var(--default-card-color);
+  border-radius: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card button {
+  cursor: pointer;
+  width: 200px;
+  border-radius: 5px;
+  border: solid 1px black;
+}
+.card button:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 2px black;
+}
+.card img {
+  padding-top: 10px;
+  width: 190px;
+  height: 140px;
+  border-radius: 10px;
+}
+.card-name {
+  font-size: 1rem;
+  padding: 20px 10px;
+  font-weight: bold;
+}
+#statgat-container {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+.statgat {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  text-align: left;
+  width: 200px;
+  align-self: stretch;
+}
+#pagin {
+  display: flex;
+  margin: 0 auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#pagin button {
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  border: solid 1px black;
+}
+#pagin button:hover {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  border: solid 2px black;
+}
+.delete-button {
+  width: 90px;
+  height: 30px;
+}
+#form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  width: 636px;
+  height: 300px;
+  background-color: var(--default-card-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+#form-container span {
+  margin: 15px auto;
+  font-weight: bold;
+}
+#create-item-form {
+  gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  height: 50px;
+}
